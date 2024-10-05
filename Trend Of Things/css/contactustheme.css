@@ -1,0 +1,42 @@
+.contactus-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 50px;
+  background-color: #222222;
+  height: 60vh;
+  color: white;
+}
+
+.map-section {
+  flex: 1;
+}
+
+.form-section {
+  flex: 1;
+  padding-left: 100px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: fuchsia;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: orchid;
+}

@@ -1,0 +1,37 @@
+.menu-desplegable {
+  display: none;
+  flex-direction: column;
+  background-color: #222222;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu-desplegable a {
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.menu-desplegable a:hover {
+  background-color: #555;
+}
+
+
+.subheader_hamburguer img {
+  cursor: pointer;
+}
+
+
+.close-icon {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+}

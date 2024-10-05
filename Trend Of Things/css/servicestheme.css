@@ -1,0 +1,122 @@
+/* Contenedor grande */
+.contenedor-grande {
+  display: flex;
+  background-color: #222222;
+}
+
+/* Texto a la izquierda */
+.texto {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #222222;
+  color: white;
+  margin-left: 80px;
+  text-align: center;
+}
+
+/* Cuatro secciones de imágenes a la derecha */
+.cuatro-secciones {
+  flex: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  height: 50vh;
+  background-color: #222222;
+  align-items: center;
+}
+
+.seccion {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+}
+
+.seccion img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.servicessection {
+  background-color: #222222;
+  color: white;
+}
+
+.imgsection {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #222222;
+}
+
+.imgsection img {
+  width: 25%;
+  height: auto;
+}
+
+.barraseparadora {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #222222;
+  text-align: center;
+}
+
+.imgrrss {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background-image: url("../img/servicios/serviceswallpaper.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.tarifa-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.tarifa-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarifa-section img {
+  width: 70%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.tarifa-section button {
+  background-color: fuchsia;
+  color: white;
+  font-size: 16px;
+  padding: 15px 70px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tarifa-section button:hover {
+  background-color: #f931ab;
+}
+

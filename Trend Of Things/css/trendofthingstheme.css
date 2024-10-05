@@ -1,0 +1,399 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS";
+}
+
+.header {
+  background: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+h3 {
+  color: white;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.redesheader {
+  display: flex;
+  height: 50%;
+  margin-left: 400px;
+}
+
+.redesheader img {
+  height: 100%;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: padding 0.2s;
+}
+
+.buttonheader {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: fuchsia;
+  border: none;
+  padding: 10px 35px;
+  cursor: pointer;
+  margin-right: 400px;
+  border-radius: 10px;
+  transition: padding 0.2s;
+}
+
+.buttonheader:hover{
+  padding: 12px 38px;
+  background-color: orchid;
+}
+
+.subheader {
+  background: #222222;
+  position: fixed;
+  width: 100%;
+  top: 60px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.subheader_img {
+  display: flex;
+  height: 90%;
+  width: auto;
+}
+
+.subheader_links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.subheader_links a {
+  margin: 0 20px;
+  color: white;
+}
+
+.subheader_hamburguer img {
+  margin-right: 20px;
+  background: fuchsia;
+  cursor: pointer;
+  border-radius: 50px;
+  height: auto;
+  width: 50px;
+}
+
+.main{
+  background-color: #222222;
+  margin-top: 75px;
+  padding: 20px;
+}
+
+.inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../img/wallpapers/hoodie.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.allpages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 55vh;
+  background-image: url("../img/wallpapers/allpages.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.intro{
+  margin-bottom: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.contactbutton {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  margin: 0;
+  width: auto;
+  box-sizing: content-box;
+}
+
+.contactbutton:hover {
+  background-color: fuchsia;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.previewservices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.leftpreviewservices {
+  flex: 1;
+  padding: 20px;
+  margin-left: 250px;
+}
+
+.rightpreviewservices {
+  flex: 1;
+  padding: 20px;
+  margin-right: 250px;
+}
+
+.tittlepink{
+  color: darkorchid;
+  font-size: 45px;
+}
+
+.pbassic{
+  color: white;
+}
+
+.buttonmain {
+  color: darkmagenta;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.5s;
+}
+
+.buttonmain:hover {
+  color: white;
+  background-color: fuchsia;
+}
+
+#video-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+}
+
+#content-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  width: 80%;
+  max-width: 600px;
+}
+
+.header, .subheader {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+.main {
+  margin-top: 75px;
+}
+
+.nuestrosclientes {
+  height: 20vh;
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.subscribe-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  background-color: fuchsia;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-section::before,
+.subscribe-section::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), transparent);
+}
+
+.subscribe-section::before {
+  top: 0;
+}
+
+.subscribe-section::after {
+  bottom: 0;
+  transform: scaleY(-1);
+}
+
+.text-section,
+.subscribe-form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-section h1 {
+  margin: 0;
+}
+
+.subscribe-form {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.subscribe-form input {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+.subscribe-form button {
+  color: white;
+  padding: 16px;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subscribe-form button:hover {
+  background-color: #222222;
+}
+
+
+.footer {
+  background-color: #222222;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.logo-section img {
+  width: 200px;
+}
+
+.contact-section p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-section i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: fuchsia;
+}
+
+.links-section ul {
+  color: white;
+  list-style: none;
+  padding: 0;
+}
+
+.links-section a {
+  color: white;
+  text-decoration: none;
+}
+
+.links-section li {
+  margin-bottom: 10px;
+}
+
+.social-section {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.carrusel-container {
+  overflow: hidden;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carrusel img {
+  width: 100px;
+  height: auto;
+  margin: 0 5px;
+}

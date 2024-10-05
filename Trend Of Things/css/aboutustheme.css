@@ -1,0 +1,35 @@
+/* Estilos para la sección de dos columnas */
+.two-column-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #222222;
+}
+
+.text-photo-container {
+  display: flex;
+  flex: 1;
+}
+
+.text-section {
+  flex: 1;
+  color: white;
+  text-align: left;
+  padding-right: 20px;
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+
+.text-section p {
+  line-height: 1.6;
+}
+
+.photo-section {
+  text-align: center;
+}
+
+.photo-section img {
+  max-width: 70%;
+  height: auto;
+}
